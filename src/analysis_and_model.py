@@ -89,7 +89,7 @@ def analysis_and_model_page():
         uploaded_file = st.file_uploader("Загрузите датасет (CSV)", type="csv")
         if uploaded_file is not None:
             data = pd.read_csv(uploaded_file)
-            st.write("Названия столбцов в загруженном CSV:", data.columns.tolist())  # Для отладки
+            # st.write("Названия столбцов в загруженном CSV:", data.columns.tolist())  # Для отладки
         else:
             st.warning("Пожалуйста, загрузите файл.")
             return
